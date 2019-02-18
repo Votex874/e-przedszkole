@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParse = require('body-parser');
 const mongoose = require('mongoose');
 const routes = require('./routes/userRestAPI')
-const port = 4000;
+const port = 3000;
 
 // setting up express app
 const app = express();
@@ -18,7 +18,7 @@ app.use(bodyParse.json());
 // initialize routes
 app.use('/api', routes)
 
- 
+
 // error handling middleware
 app.use( (err, req, res, next) => {
   console.log(err)

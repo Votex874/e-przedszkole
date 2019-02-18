@@ -11,7 +11,7 @@ const UserSchema = new Schema({
     type: String,
     required: [true, "Grupa w ktorej znajduje się dziecko jest obowiązkowa"]
   },
-  parent: {
+   parent: {
     name: {
       type: String,
       required: true
@@ -27,24 +27,6 @@ const UserSchema = new Schema({
     email: {
       type: String,
       required: true
-    },
-    secondParent: {
-      name: {
-        type: String,
-        require: false
-      },
-      surname: {
-        type: String,
-        require: false
-      },
-      phone: {
-        type: String,
-        require: false
-      },
-      email: {
-        type: String,
-        require: false
-      }
     },
     address: {
       street: {

@@ -2,14 +2,14 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 // creating a user Schema
-const UserSchema = new Schema({
+const UserSchema = newSchema({
   role: {
     type: String,
     required: [true, 'Rola użytkownika nie została wybrana']
   },
   kinderGarderGroup: {
     type: String,
-    required: [true, "Grupa w ktorej znajduje się dziecko jest obowiązkowa"]
+    required: true,
   },
   parent: {
     name: {
@@ -27,24 +27,6 @@ const UserSchema = new Schema({
     email: {
       type: String,
       required: true
-    },
-    secondParent: {
-      name: {
-        type: String,
-        require: false
-      },
-      surname: {
-        type: String,
-        require: false
-      },
-      phone: {
-        type: String,
-        require: false
-      },
-      email: {
-        type: String,
-        require: false
-      }
     },
     address: {
       street: {
@@ -70,7 +52,7 @@ const UserSchema = new Schema({
         required: true,
       },
       age: {
-        type: Number,
+        type: Integer,
         required: true,
       }
     }
@@ -79,7 +61,4 @@ const UserSchema = new Schema({
 
 const User = mongoose.model('user', UserSchema);
 
-module.exports = User; 
-
-
- 
+module.exports = User;

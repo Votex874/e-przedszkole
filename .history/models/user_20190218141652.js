@@ -28,24 +28,6 @@ const UserSchema = new Schema({
       type: String,
       required: true
     },
-    secondParent: {
-      name: {
-        type: String,
-        require: false
-      },
-      surname: {
-        type: String,
-        require: false
-      },
-      phone: {
-        type: String,
-        require: false
-      },
-      email: {
-        type: String,
-        require: false
-      }
-    },
     address: {
       street: {
         type: String,

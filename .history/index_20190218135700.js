@@ -16,7 +16,7 @@ app.use(express.static('build'))
 app.use(bodyParse.json());
 
 // initialize routes
-app.use('/api', routes)
+app.use('/apii', routes)
 
  
 // error handling middleware

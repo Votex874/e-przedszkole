@@ -44,7 +44,9 @@ const UserSchema = new Schema({
       email: {
         type: String,
         require: false
-      }
+      },
+      type: String,
+      require: false
     },
     address: {
       street: {

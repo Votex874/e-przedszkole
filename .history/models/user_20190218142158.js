@@ -30,21 +30,19 @@ const UserSchema = new Schema({
     },
     secondParent: {
       name: {
-        type: String,
-        require: false
+        type: String
       },
       surname: {
-        type: String,
-        require: false
+        type: String
       },
       phone: {
-        type: String,
-        require: false
+        type: String
       },
       email: {
-        type: String,
-        require: false
-      }
+        type: String
+      },
+      type: String,
+      require: false
     },
     address: {
       street: {
