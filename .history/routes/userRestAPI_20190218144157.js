@@ -28,9 +28,9 @@ router.put('/users/:id', (req, res, next) => {
 })
 
 router.delete('/users/:id', (req, res, next) => {
-  // Szukamy usera z naszym id w roucie zeby go usunac
+  // Szukamy usera z naszym id w roucie zeby zmienić mu parametry
   User.findOneAndDelete({ _id: req.params.id }).then( user => {
-    res.send(user)
+    res.send(ninja)
   })
 })
 

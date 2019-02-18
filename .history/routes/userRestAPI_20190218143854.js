@@ -19,18 +19,11 @@ router.post('/users', (req, res, next) => {
 
 router.put('/users/:id', (req, res, next) => {
   // Szukamy usera z naszym id w roucie zeby zmienić mu parametry
-  User.findOneAndUpdate({ _id: req.params.id }, req.body).then( () => {
+  User.findByIdAndUpdate({ _id: req.params.id }, req.body).then( () => {
     // szukamy danego usera zeby zobaczyc czy rzeczywiscie dostal update
     User.findOne({ _id: req.params.id }).then( user => {
       res.send(user)
     })
-  })
-})
-
-router.delete('/users/:id', (req, res, next) => {
-  // Szukamy usera z naszym id w roucie zeby go usunac
-  User.findOneAndDelete({ _id: req.params.id }).then( user => {
-    res.send(user)
   })
 })
 
