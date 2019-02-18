@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import Logo from '../Logo/index'
-import Navigation from '../Nav/index'
 
 const Header = styled.header`
  max-width: 1200px;
@@ -9,15 +8,14 @@ const Header = styled.header`
  margin: 0 auto;
 `
 
-class HeaderMain extends Component {
+class Navigation extends Component {
   render() {
     return (
       <Header>
-        <Navigation />
         <Logo />
       </Header>
-    ); 
+    );
   }
 }
 
-export default HeaderMain;
+export default Navigation;

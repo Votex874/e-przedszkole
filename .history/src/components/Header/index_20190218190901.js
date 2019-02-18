@@ -13,7 +13,7 @@ class HeaderMain extends Component {
   render() {
     return (
       <Header>
-        <Navigation />
+        <Nav />
         <Logo />
       </Header>
     ); 
