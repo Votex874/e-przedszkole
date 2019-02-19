@@ -1,0 +1,48 @@
+const initState = {
+  links: {
+    home: {
+      name: 'strona główna',
+      url: '/'
+    },
+    news: {
+      name: 'aktualności',
+      url: '/blog'
+    },
+    about: {
+      name: 'o nas',
+      url: '/o-nas'
+    },
+    contact: {
+      name: 'kontakt',
+      url: '/kontakt'
+    },
+    panel: {
+      name: 'panel',
+      url: '/panel'
+    },
+    recruitment: {
+      name: 'rekrutacja',
+      url: '/rekrutacja'
+    }
+  },
+  news: {
+    1: {
+      date: '24 03 2018',
+      author: 'Jan Wojnicki',
+      imageName: 'news01',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem        metus, convallis non justo ut, pharetra pulvinar justo. Morbi ac tellus           fringilla lorem eleifend convallis non sit amet nulla. Maecenas facilisis magna   at bibendum rutrum. Pellentesque maximus erat sit amet tortor pellentesque        lobortis. Nunc id tortor nibh. Maecenas pellentesque arcu erat, nec imperdiet     est luctus in. Donec congue, enim sit amet elementum tempus, nunc elit vehicula   orci, eu volutpat metus libero eu ligula. Nunc pretium lobortis metus sit amet    luctus. Ut vel felis interdum, facilisis odio in, placerat nunc. Nulla            facilisi. Phasellus bibendum vitae est sit amet vestibulum. Praesent vehicula     nunc malesuada augue gravida gravida. Sed id nisl consectetur, venenatis metus    ut, viverra justo. Sed fringilla ligula non est aliquam, quis ullamcorper mi      malesuada. Vivamus tincidunt luctus quam id porttitor.',
+    },
+    2: {
+      date: '01 06 2018',
+      author: 'Sebastian Karolski',
+      imageName: 'news02',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sem        metus, convallis non justo ut, pharetra pulvinar justo. Morbi ac tellus           fringilla lorem eleifend convallis non sit amet nulla. Maecenas facilisis magna   at bibendum rutrum. Pellentesque maximus erat sit amet tortor pellentesque        lobortis. Nunc id tortor nibh. Maecenas pellentesque arcu erat, nec imperdiet     est luctus in. Donec congue, enim sit amet elementum tempus, nunc elit vehicula   orci, eu volutpat metus libero eu ligula. Nunc pretium lobortis metus sit amet    luctus. Ut vel felis interdum, facilisis odio in, placerat nunc. Nulla            facilisi. Phasellus bibendum vitae est sit amet vestibulum. Praesent vehicula     nunc malesuada augue gravida gravida. Sed id nisl consectetur, venenatis metus    ut, viverra justo. Sed fringilla ligula non est aliquam, quis ullamcorper mi      malesuada. Vivamus tincidunt luctus quam id porttitor.',
+    }    
+  }
+}
+
+const rootReducer = (state = initState, action) => {
+  return state
+}
+
+export default rootReducer
