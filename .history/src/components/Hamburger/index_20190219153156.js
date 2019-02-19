@@ -47,11 +47,10 @@ class Hambuger extends Component {
 
   handleHamburger = () => {
     const { imgSrc } = this.state;
-    const logo = document.getElementById('logo')
+    console.log(document.getElementById('logo'))
     setTimeout( () => {
       if (imgSrc !== hamburgerImg) {
         this.body.style.overflow = "auto";
-        logo.style.color = lightBlue;
         this.setState({
           imgSrc: hamburgerImg,
           displayMobile: 'none',
@@ -59,7 +58,6 @@ class Hambuger extends Component {
         })
       } else {
         this.body.style.overflow = "hidden";
-        logo.style.color = '#fff';
         this.setState({
           imgSrc: times,
           displayMobile: 'block',

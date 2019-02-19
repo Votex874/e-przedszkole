@@ -35,7 +35,7 @@ class Hambuger extends Component {
   constructor(props){
     super(props)
 
-    this.body = document.querySelector('body');
+    this.body = document.querySelector('body')
 
     this.state = {
       imgAlt: 'hamburgerMenuIcon',
@@ -47,23 +47,21 @@ class Hambuger extends Component {
 
   handleHamburger = () => {
     const { imgSrc } = this.state;
-    const logo = document.getElementById('logo')
+    console.log(this.body)
     setTimeout( () => {
       if (imgSrc !== hamburgerImg) {
         this.body.style.overflow = "auto";
-        logo.style.color = lightBlue;
         this.setState({
           imgSrc: hamburgerImg,
           displayMobile: 'none',
-          fade: 1
+          fade: 1,
         })
       } else {
         this.body.style.overflow = "hidden";
-        logo.style.color = '#fff';
         this.setState({
           imgSrc: times,
           displayMobile: 'block',
-          fade: 1
+          fade: 1,
         })
       }
     }, 400)

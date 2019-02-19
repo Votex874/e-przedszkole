@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import imgUser from '../../images/icons/loginUser.svg'
+import { lightBlue } from '../../constColors'
 
 const ButtonAlink = styled.a`
   width: 240px;

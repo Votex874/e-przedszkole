@@ -46,3 +46,11 @@ table {
  body {
 	font-family: 'Lato', sans-serif;
  }
+
+ a{
+	 color: #000;
+	 text-decoration: none;
+	 &:visited{
+		color: #000;
+	 }
+ }

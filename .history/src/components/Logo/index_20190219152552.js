@@ -41,7 +41,7 @@ class Logo extends Component {
     const { logoLink } = this.state;
     return (
       <Alink href={logoLink}>
-        <Span id='logo' className="logo2"><Bold>e</Bold> - <Bold>szkole</Bold></Span>
+        <Span id="logo"><Bold>e</Bold> - <Bold>szkole</Bold></Span>
       </Alink>
     );
   }
