@@ -9,7 +9,6 @@ const Nav = styled.nav`
   display: flex;
   @media (max-width: 767px){  
     flex-direction: column;
-    margin: 40px 0 0 0;
   }
 `
 

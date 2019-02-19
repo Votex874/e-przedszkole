@@ -9,7 +9,7 @@ const Nav = styled.nav`
   display: flex;
   @media (max-width: 767px){  
     flex-direction: column;
-    margin: 40px 0 0 0;
+    margin: 80px 0 0 0;
   }
 `
 
@@ -25,7 +25,7 @@ class Navigation extends Component {
     }
     return (
       <React.Fragment>
-        <LoginButton />  
+      <LoginButton />  
         <Nav>
           {listOfLinks}
         </Nav>

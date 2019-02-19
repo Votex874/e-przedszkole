@@ -6,8 +6,7 @@ const Alink = styled.a`
   text-decoration: none;
   color: ${brown};
   margin: 10px 0;
-  font-size: 24px;
-  text-transform: uppercase;
+  font-size: 20px;
   text-align: center;
 `
 

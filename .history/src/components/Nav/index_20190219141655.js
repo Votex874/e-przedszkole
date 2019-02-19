@@ -8,8 +8,7 @@ import LoginButton from './../LoginButton/index';
 const Nav = styled.nav`
   display: flex;
   @media (max-width: 767px){  
-    flex-direction: column;
-    margin: 40px 0 0 0;
+    flex-direction: column-reverse;
   }
 `
 
@@ -24,12 +23,10 @@ class Navigation extends Component {
       i++;
     }
     return (
-      <React.Fragment>
-        <LoginButton />  
-        <Nav>
-          {listOfLinks}
-        </Nav>
-      </React.Fragment>
+      <Nav>
+        {listOfLinks} 
+        <LoginButton />      
+      </Nav>
     ); 
   }
 }

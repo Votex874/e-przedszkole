@@ -11,14 +11,12 @@ const Alink = styled.a`
   height: 100px;
   text-decoration: none;
   font-size: 36px;
-  position: relative;
-  z-index: 10;
 
-  @media (max-width: 767px) {
-    height: auto;
+  @media (max-width: 700px) {
     font-size: 28px;
     align-items: flex-start;
     justify-content: flex-start;
+    margin: 15px 0 0 15px;
   }
 `
 const Span = styled.span`

@@ -2,22 +2,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components'
 import Logo from '../Logo/index'
 import Navigation from '../Nav/index'
-import Hamburger from '../Hamburger/index'
 
 const Header = styled.header`
  max-width: 1200px;
  height: 100px;
  margin: 0 auto;
- display: flex;
- justify-content: space-between;
- align-items: stretch;
- box-sizing: border-box;
- margin-top: 15px;
- @media (max-width: 1200px){
-   width: 90%;
-   height: 50px;
-   align-items: center;
- }
 `
 
 class HeaderMain extends Component {
@@ -43,11 +32,10 @@ class HeaderMain extends Component {
   }
 
   render() {
-    const { width } = this.state;
     return (
       <Header>
+        <Navigation />
         <Logo />
-        { width <= 767 ? <Hamburger /> : <Navigation /> }
       </Header>
     ); 
   }

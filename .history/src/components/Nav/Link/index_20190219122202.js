@@ -1,17 +1,15 @@
 import React from 'react';
 import styled from 'styled-components'
-import { brown } from '../../../constColors'
 
 const Alink = styled.a`
   text-decoration: none;
-  color: ${brown};
-  margin: 10px 0;
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center;
+  color: #000;
 `
 
+
+
 const SingleLink = ({ data }) => {
+  console.log(data)
   return (
     <Alink href={data.url}>{data.name}</Alink>
   )

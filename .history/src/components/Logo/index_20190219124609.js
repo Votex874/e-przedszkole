@@ -11,11 +11,8 @@ const Alink = styled.a`
   height: 100px;
   text-decoration: none;
   font-size: 36px;
-  position: relative;
-  z-index: 10;
 
   @media (max-width: 767px) {
-    height: auto;
     font-size: 28px;
     align-items: flex-start;
     justify-content: flex-start;

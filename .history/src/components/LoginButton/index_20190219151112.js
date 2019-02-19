@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
 import imgUser from '../../images/icons/loginUser.svg'
-import { brown } from '../../constColors'
 
 const ButtonAlink = styled.a`
   width: 240px;
-  height: 44px;
+  height: 40px;
   font-size: 26px;
   text-transform: uppercase;
   font-weight: bold;
@@ -14,8 +13,8 @@ const ButtonAlink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 20px;
-  border: 3px solid ${brown};
+  border-radius: 10px;
+  border: 3px solid #fff;
 `
 
 const IconImg = styled.img`
@@ -27,7 +26,7 @@ const IconImg = styled.img`
   margin-left: 15px;
 `
 const SpanText = styled.span`
-  color: ${brown};
+  color: #fff;
 `
 
 class LoginButton extends Component {

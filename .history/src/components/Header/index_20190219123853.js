@@ -9,15 +9,6 @@ const Header = styled.header`
  height: 100px;
  margin: 0 auto;
  display: flex;
- justify-content: space-between;
- align-items: stretch;
- box-sizing: border-box;
- margin-top: 15px;
- @media (max-width: 1200px){
-   width: 90%;
-   height: 50px;
-   align-items: center;
- }
 `
 
 class HeaderMain extends Component {
@@ -46,8 +37,8 @@ class HeaderMain extends Component {
     const { width } = this.state;
     return (
       <Header>
+      { width <= 768 ? <Hamburger /> : <Navigation /> }
         <Logo />
-        { width <= 767 ? <Hamburger /> : <Navigation /> }
       </Header>
     ); 
   }

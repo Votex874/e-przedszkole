@@ -10,13 +10,10 @@ const Header = styled.header`
  margin: 0 auto;
  display: flex;
  justify-content: space-between;
- align-items: stretch;
  box-sizing: border-box;
  margin-top: 15px;
  @media (max-width: 1200px){
    width: 90%;
-   height: 50px;
-   align-items: center;
  }
 `
 
