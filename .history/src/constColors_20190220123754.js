@@ -31,7 +31,8 @@ position: relative;
       rgba(255, 255, 255, 0.0) 100%
     );
   }
-  
+
+
   &:hover:after {
     opacity: 1;
     top: -30%;

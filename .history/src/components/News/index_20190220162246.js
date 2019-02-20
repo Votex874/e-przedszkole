@@ -5,24 +5,8 @@ import Title from './Title/index'
 import Content from './Content/index'
 import Avatar from './Avatar/index'
 import Footer from './Footer/index'
-import calendaryImg from '../../images/icons/calendar.png'
-
-const HeaderIcon = styled.img`
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  @media (max-width: 767px){
-    width: 20px;
-    height: 20px;
-  }
-  @media (min-width: 768px) and (max-width: 1400px){
-    width: 26px;
-    height: 26px;
-  }
-`
 
 const ArticleContainer = styled.article`
-  display: block;
   height: auto;
   @media (max-width: 767px){
     padding-bottom: 5px;
@@ -32,20 +16,19 @@ const ArticleContainer = styled.article`
 `
 
 const SectionContent = styled.section`
-  height: auto;
-  display: block;
+
 `
 
 const NewsContainer = styled.section`
   margin: 30px auto 0 auto;
-  width: 60%;
+  width: 90%;
   height: auto;
   @media (max-width: 767px){  
     width: 94%;
     margin: 30px auto 0 auto;
   }
   @media (min-width: 768px) and (max-width: 1400px){
-    width: 65%;
+    width: 50%;
     margin: 60px auto 0 auto;
   }
 `
@@ -101,7 +84,7 @@ class News extends Component {
     const { newsList } = this.state
     return (
       <NewsContainer>
-        <SectionTitle>Co u nas słychać <HeaderIcon src={calendaryImg} /></SectionTitle>
+        <SectionTitle>Co u nas słychać</SectionTitle>
         {newsList}
       </NewsContainer>
     );

@@ -8,17 +8,7 @@ import Footer from './Footer/index'
 import calendaryImg from '../../images/icons/calendar.png'
 
 const HeaderIcon = styled.img`
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  @media (max-width: 767px){
-    width: 20px;
-    height: 20px;
-  }
-  @media (min-width: 768px) and (max-width: 1400px){
-    width: 26px;
-    height: 26px;
-  }
+
 `
 
 const ArticleContainer = styled.article`
@@ -45,7 +35,7 @@ const NewsContainer = styled.section`
     margin: 30px auto 0 auto;
   }
   @media (min-width: 768px) and (max-width: 1400px){
-    width: 65%;
+    width: 50%;
     margin: 60px auto 0 auto;
   }
 `

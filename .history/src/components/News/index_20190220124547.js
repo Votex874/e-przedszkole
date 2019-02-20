@@ -5,53 +5,28 @@ import Title from './Title/index'
 import Content from './Content/index'
 import Avatar from './Avatar/index'
 import Footer from './Footer/index'
-import calendaryImg from '../../images/icons/calendar.png'
-
-const HeaderIcon = styled.img`
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-  @media (max-width: 767px){
-    width: 20px;
-    height: 20px;
-  }
-  @media (min-width: 768px) and (max-width: 1400px){
-    width: 26px;
-    height: 26px;
-  }
-`
 
 const ArticleContainer = styled.article`
-  display: block;
-  height: auto;
   @media (max-width: 767px){
-    padding-bottom: 5px;
-    border-bottom: 2px dotted #fff;
-    margin-bottom: 15px;
-  } 
+
+  }
 `
 
 const SectionContent = styled.section`
-  height: auto;
-  display: block;
+
 `
 
 const NewsContainer = styled.section`
-  margin: 30px auto 0 auto;
-  width: 60%;
-  height: auto;
+  margin: 30px 0 0 0;
   @media (max-width: 767px){  
     width: 94%;
-    margin: 30px auto 0 auto;
-  }
-  @media (min-width: 768px) and (max-width: 1400px){
-    width: 65%;
-    margin: 60px auto 0 auto;
+    margin: 30px auto;
+    border-bottom: 2px solid #fff;
   }
 `
 
 const SectionTitle = styled.h2`
-  font-size: 32px;
+  font-size: 18px;
   color: #fff;
   width: 90%;
   margin: 0 auto 30px auto;
@@ -59,10 +34,6 @@ const SectionTitle = styled.h2`
   text-transform: uppercase;
   @media (max-width: 767px){
     font-size: 22px;
-  }
-  @media (min-width: 768px) and (max-width: 1400px){
-    font-size: 28px;
-    font-weight: bold;
   }
 `
 
@@ -101,7 +72,7 @@ class News extends Component {
     const { newsList } = this.state
     return (
       <NewsContainer>
-        <SectionTitle>Co u nas słychać <HeaderIcon src={calendaryImg} /></SectionTitle>
+        <SectionTitle>Co u nas słychać</SectionTitle>
         {newsList}
       </NewsContainer>
     );

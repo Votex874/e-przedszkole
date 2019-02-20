@@ -45,7 +45,7 @@ const NewsContainer = styled.section`
     margin: 30px auto 0 auto;
   }
   @media (min-width: 768px) and (max-width: 1400px){
-    width: 65%;
+    width: 50%;
     margin: 60px auto 0 auto;
   }
 `

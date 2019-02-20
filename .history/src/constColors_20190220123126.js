@@ -2,7 +2,7 @@ const brown = '#BF5000';
 const greenDark = '#008723';
 const greenLight = '#34BD56';
 const lightBlue = '#00BEFF';
-const turquoise = '#fff';
+const turquoise = '#00E5DC';
 
 const shineOnHover = `
 position: relative;
@@ -31,7 +31,8 @@ position: relative;
       rgba(255, 255, 255, 0.0) 100%
     );
   }
-  
+
+
   &:hover:after {
     opacity: 1;
     top: -30%;
@@ -47,4 +48,4 @@ position: relative;
   }
 `
 
-export { brown, greenLight, greenDark, lightBlue, shineOnHover, turquoise }
+export { brown, greenLight, greenDark, lightBlue, shineOnHover }
