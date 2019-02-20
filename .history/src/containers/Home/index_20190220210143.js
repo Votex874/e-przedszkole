@@ -11,7 +11,6 @@ class Home extends Component {
         <HeaderMain />
         <News />
         <AboutUs />
-        <Graduates />
       </React.Fragment>
     );
   }

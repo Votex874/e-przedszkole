@@ -56,8 +56,9 @@ const SectionTitle = styled.h2`
   width: 90%;
   margin: 0 auto 30px auto;
   text-align: center;
-  text-transform: uppercase;  
-  font-weight: bold;
+  text-transform: uppercase;
+  
+    font-weight: bold;
   @media (max-width: 767px){
     font-size: 22px;
   }
