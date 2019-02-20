@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-import { shineOnHover, lightBlue } from '../../constColors'
-
+import { shineOnHover } from '../../constColors'
+import { lightBlue } from '../../../constColors'
 
 const Alink = styled.a`
   display: flex;

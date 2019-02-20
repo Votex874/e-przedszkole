@@ -48,4 +48,4 @@ position: relative;
   }
 `
 
-export { brown, greenLight, greenDark, lightBlue, shineOnHover, turquoise, darkBlue }
+export { brown, greenLight, greenDark, lightBlue, shineOnHover, turquoise }

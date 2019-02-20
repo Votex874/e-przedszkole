@@ -39,7 +39,7 @@ const Header = styled.header`
 const SectionTitle = ({ title, img }) => {
   return (
     <Header>
-      <HeaderTitle>{title}</HeaderTitle> 
+      <HeaderTitle>{title}</HeaderTitle>
       <HeaderImg src={img} alt="ikona zespolu"/>
     </Header>
   )

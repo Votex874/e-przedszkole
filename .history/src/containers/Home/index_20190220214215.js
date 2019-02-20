@@ -13,7 +13,6 @@ class Home extends Component {
         <News />
         <AboutUs />
         <Graduates />
-        <Lokalization />
       </React.Fragment>
     );
   }

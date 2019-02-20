@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { darkBlue } from '../../../constColors'
+import { lightBlue } from '../../../constColors'
 
 const Item = styled.p`
   text-align: center;
   margin: 10px 0;
   line-height: 16px;
-  color: ${darkBlue};
+  color: ${lightBlue};
   @media (max-width: 767px){
     font-size: 18px;
   }

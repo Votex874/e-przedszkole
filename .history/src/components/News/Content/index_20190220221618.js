@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components'
-import { darkBlue } from '../../../constColors'
 
 const Text = styled.span`
-  color: ${darkBlue};
+  color: #0089C6;
   line-height: 28px;
   font-size: 20px;
   @media (max-width: 767px){
@@ -18,10 +17,7 @@ const Text = styled.span`
 
 const Content = ({ content }) => {
   return (
-    <Text>
-      {content}...
-
-    </Text>
+    <Text>{content.slice(0,499)}...</Text>
   )
 }
 

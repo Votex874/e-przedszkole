@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components'
-import { shineOnHover, lightBlue } from '../../../constColors'
+import { shineOnHover } from '../../../constColors'
+import { lightBlue } from '../../../constColors'
 
 const Alink = styled.a`
   text-decoration: none;
   color: ${lightBlue};
-  margin: 10px 0; 
+  margin: 10px 0;
   padding: 0 12px;
   font-size: 20px;
   text-transform: uppercase;

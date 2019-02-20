@@ -8,6 +8,20 @@ import Footer from './Footer/index'
 import calendaryImg from '../../images/icons/calendar.png'
 import SectionTitle from '../SectionTitle/index'
 
+const HeaderIcon = styled.img`
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  @media (max-width: 767px){
+    width: 20px;
+    height: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 1400px){
+    width: 26px;
+    height: 26px;
+  }
+`
+
 const ArticleContainer = styled.article`
   display: block;
   height: auto;
@@ -73,7 +87,7 @@ class News extends Component {
     const { newsList, title } = this.state
     return (
       <NewsContainer>
-        <SectionTitle title={title} img={calendaryImg} />
+        <SectionTitle title={title} src={calendaryImg} />
         {newsList}
       </NewsContainer>
     );

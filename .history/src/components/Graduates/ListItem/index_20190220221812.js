@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { darkBlue } from '../../../constColors'
+import { lightBlue, darkBlue } from '../../../constColors'
 
 const Item = styled.p`
   text-align: center;

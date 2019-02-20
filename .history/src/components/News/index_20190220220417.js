@@ -73,7 +73,7 @@ class News extends Component {
     const { newsList, title } = this.state
     return (
       <NewsContainer>
-        <SectionTitle title={title} img={calendaryImg} />
+        <SectionTitle title={title} src={calendaryImg} />
         {newsList}
       </NewsContainer>
     );

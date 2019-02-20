@@ -10,9 +10,9 @@ const TitleHeader = styled.h2`
   color: ${lightBlue};
   font-size: 26px;
   margin: 20px 0;
-  display: inline-block;
-  padding-bottom: 5px;
   border-bottom: 2px solid ${lightBlue};
+  width: auto;
+  display: block;
   @media (max-width: 767px){
     font-size: 18px;
     margin: 10px 0;

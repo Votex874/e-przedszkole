@@ -7,6 +7,21 @@ import Avatar from './Avatar/index'
 import Footer from './Footer/index'
 import calendaryImg from '../../images/icons/calendar.png'
 import SectionTitle from '../SectionTitle/index'
+import { totalmem } from 'os';
+
+const HeaderIcon = styled.img`
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  @media (max-width: 767px){
+    width: 20px;
+    height: 20px;
+  }
+  @media (min-width: 768px) and (max-width: 1400px){
+    width: 26px;
+    height: 26px;
+  }
+`
 
 const ArticleContainer = styled.article`
   display: block;
@@ -34,6 +49,22 @@ const NewsContainer = styled.section`
   @media (min-width: 768px) and (max-width: 1400px){
     width: 65%;
     margin: 60px auto 0 auto;
+  }
+`
+
+const SectionTitle = styled.h2`
+  font-size: 32px;
+  color: #fff;
+  width: 90%;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  text-transform: uppercase;  
+  font-weight: bold;
+  @media (max-width: 767px){
+    font-size: 22px;
+  }
+  @media (min-width: 768px) and (max-width: 1400px){
+    font-size: 28px;
   }
 `
 
@@ -73,7 +104,7 @@ class News extends Component {
     const { newsList, title } = this.state
     return (
       <NewsContainer>
-        <SectionTitle title={title} img={calendaryImg} />
+        <SectionTitle title={title} src={calendaryImg} />
         {newsList}
       </NewsContainer>
     );
